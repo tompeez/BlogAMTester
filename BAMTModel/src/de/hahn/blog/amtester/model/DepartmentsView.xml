@@ -47,6 +47,16 @@
     EntityAttrName="LocationId"
     EntityUsage="Departments"
     AliasName="LOCATION_ID"/>
+  <ViewAttribute
+    Name="TotalSalary"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    AliasName="VIEW_ATTR"
+    SQLType="VARCHAR"/>
   <ViewLinkAccessor
     Name="EmployeesView"
     ViewLink="de.hahn.blog.amtester.model.EmpDeptFkLink"
