@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="de.hahn.blog.amtester.model.BAMTAppModule">
+      <AppModuleConfig name="BAMTAppModuleLocal" ApplicationName="de.hahn.blog.amtester.model.BAMTAppModule" DeployPlatform="LOCAL" jbo.project="de.hahn.blog.amtester.model.BAMTModel">
+         <Security AppModuleJndiName="de.hahn.blog.amtester.model.BAMTAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/HRConnDS"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="BAMTAppModuleShared" ApplicationName="de.hahn.blog.amtester.model.BAMTAppModule" DeployPlatform="LOCAL" jbo.project="de.hahn.blog.amtester.model.BAMTModel">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Security AppModuleJndiName="de.hahn.blog.amtester.model.BAMTAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/HRConnDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
